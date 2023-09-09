@@ -13,3 +13,16 @@ def calcDistance(speed, time):
         float: distance travelled in km
     """
     return speed * time
+
+# 3. 
+def formatTime(hour, minute):
+    """Formats the hour and minute into an analog clock time
+
+    Parameters:
+        hour (int): hour of the day
+        minute (int): minute of the hour
+
+    Returns:
+        string: analog clock time
+    """
+    return f"{hour:02d}:{minute:02d}"
