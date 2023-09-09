@@ -40,6 +40,18 @@ formattedBool = f"Boolean: {bool1:b}"
 
 # Rounding floats
 formattedFloat = f"Float: {float1:.1f}"
+formattedFloat = f"Float: {float1:10.4f}"
 
 # Spacing
 formattedInt = f"Integer: {int1:5d}"
+
+# Alignment
+
+# Right Alignment - > 
+formattedInt = f"Integer: {int1:>5d}"
+
+# Left Alignment - <
+formattedInt = f"Integer: {int1:<5d}"
+
+# Center Alignment - ^
+formattedInt = f"Integer: {int1:*^5d}"
