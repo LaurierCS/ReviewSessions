@@ -1,9 +1,7 @@
 # 1.  print the following using an f string: |    12345| |     123.45| |        Hi There|
 
 
-# 2.  write a docstring for the following function: 
-def calcDistance(speed, time):
-    return speed * time
+
 
 # 3. write a function that takes an hour and minute and returns a formatted analog clock time
 #    e.g. 1, 30 -> 01:30
