@@ -2,7 +2,8 @@
 
 def add(num1, num2):
     """
-    This function adds two numbers together
+    adds two numbers together
+    Use: result = add(num1, num2)
     --------------------------------------------------
     Parameters:
         num1 (int): The first number
@@ -10,7 +11,27 @@ def add(num1, num2):
     
     Returns:
         num3 (int): The sum of num1 and num2
-
+    --------------------------------------------------
     """
     num3 = num1 + num2
     return num3
+
+
+def calc_angles(side_a, side_b, side_c):
+    """
+    calculates angles of a triangle given the lengths of its sides
+    Use: angle_a, angle_b, angle_c = calc_angles(side_a, side_b, side_c)
+    --------------------------------------------------
+    Parameters:
+        side_a (float): The length of side a
+        side_b (float)): The length of side b
+        side_c (float): The length of side c
+        side_c < side_a + side_b
+    
+    Returns:
+        angle_a (float): The angle opposite side a
+        angle_b (float): The angle opposite side b
+        angle_c (float): The angle opposite side c
+
+    
+    """
