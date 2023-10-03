@@ -8,9 +8,6 @@ def add(num1, num2):
     Parameters:
         num1 (int): The first number
         num2 (int): The second number
-    
-    Returns:
-        num3 (int): The sum of num1 and num2
     --------------------------------------------------
     """
     num3 = num1 + num2
@@ -45,4 +42,24 @@ elif statement2:
 else:
     print("L")
 
-# 3
+
+# 3. Return statements
+def add(num1, num2):
+    """
+    adds two numbers together and prints the results
+    Use: add(num1, num2)
+    --------------------------------------------------
+    Parameters:
+        num1 (int): The first number
+        num2 (int): The second number
+    
+    Returns:
+        num3 (int): The sum of num1 and num2
+    --------------------------------------------------
+    """
+    num3 = num1 + num2
+    return num3
+
+# 4. Importing Libraries
+# create new python file with function called function
+from functions import function
