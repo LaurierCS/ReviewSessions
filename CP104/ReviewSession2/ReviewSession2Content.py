@@ -1,9 +1,9 @@
-# 2. Docstrings
+# 1. Docstrings
 
 def add(num1, num2):
     """
-    adds two numbers together
-    Use: result = add(num1, num2)
+    adds two numbers together and prints the results
+    Use: add(num1, num2)
     --------------------------------------------------
     Parameters:
         num1 (int): The first number
@@ -14,7 +14,7 @@ def add(num1, num2):
     --------------------------------------------------
     """
     num3 = num1 + num2
-    return num3
+    print(num3)
 
 
 def calc_angles(side_a, side_b, side_c):
@@ -32,6 +32,17 @@ def calc_angles(side_a, side_b, side_c):
         angle_a (float): The angle opposite side a
         angle_b (float): The angle opposite side b
         angle_c (float): The angle opposite side c
-
-    
+    --------------------------------------------------
     """
+
+# 2. Decisions
+statement1 = True
+statement2 = True
+if statement1:
+    print("I love LCS")
+elif statement2:
+    print("Python is cool")
+else:
+    print("L")
+
+# 3
