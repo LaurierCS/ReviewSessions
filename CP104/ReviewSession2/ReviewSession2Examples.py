@@ -1,5 +1,9 @@
-# 1.  write a docstring for the following function: 
+# 1.  complete the docstring for the following function: 
 def calcDistance(speed, time):
+    """
+    calculates the distance an object travels
+    
+    """
     return speed * time
 
 # 2. implement the following function

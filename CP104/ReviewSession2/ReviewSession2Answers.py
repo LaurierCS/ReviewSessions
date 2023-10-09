@@ -1,14 +1,17 @@
 # 1.
 def calcDistance(speed, time):
     """
-    Calculates the distance travelled given the speed and time travelled
+    -------------------------------------------------------
+    calculates the distance an object travels
     Use: distance = calcDistance(speed, time)
+    -------------------------------------------------------
     Parameters:
-        speed (float): speed travelled in km/h
-        time (float): time travelled in hours
-
+        speed (float): speed the object is going
+        time (float): time the object travels
+        time > 0
     Returns:
-        float: distance travelled in km
+        distance (float): distance the object travels    
+    -------------------------------------------------------
     """
     return speed * time
 
@@ -16,8 +19,8 @@ def calcDistance(speed, time):
 def addFraction(num1, den1, num2, den2):
     """
     -------------------------------------------------------
-    Calculates and returns fraction values.
-    Use: num, den, product = addFraction(num1, den1, num2, den2)
+    Calculates and returns fraction sum.
+    Use: num, den, sum = addFraction(num1, den1, num2, den2)
     -------------------------------------------------------
     Parameters:
         num1 - numerator of first fraction (int)
@@ -28,7 +31,7 @@ def addFraction(num1, den1, num2, den2):
         num - numerator of sum (int)
         den - denominator of sum (int)
         sum - num / den (float)
-    --------
+    -------------------------------------------------------
     """
     num = num1 * den2 + num2 * den1
     den = den1 * den2

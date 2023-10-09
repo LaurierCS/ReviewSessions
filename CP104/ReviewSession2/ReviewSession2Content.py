@@ -47,7 +47,7 @@ else:
 def add(num1, num2):
     """
     adds two numbers together and prints the results
-    Use: add(num1, num2)
+    Use: num3 = add(num1, num2)
     --------------------------------------------------
     Parameters:
         num1 (int): The first number
