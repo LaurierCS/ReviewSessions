@@ -16,3 +16,17 @@ def number_staircase(start, end, increment):
 def calculate_factorial(target):
     """
     """
+
+# 3. Implement the following function
+def format_bio(name, age):
+    """
+    returns a string in the following format Hi, my name is name and I am age years (rounded to 2 decimal places) old.
+    Use: bio = format_bio(name, age)
+
+    Parameters:
+        name (string) - name of the person
+        age (int) - age of the person in months
+    
+    Returns:
+        bio (string) - formatted bio
+    """
