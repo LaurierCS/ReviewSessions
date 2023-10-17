@@ -30,3 +30,14 @@ def format_bio(name, age):
     Returns:
         bio (string) - formatted bio
     """
+
+# 4. Implement the following function
+def print_triangle(base_length, char):
+    """
+    prints a triangle of base_length using char
+    Use: print_triangle(base_length, char)
+
+    Parameters:
+        base_length (int) - length of the base of the triangle
+        char (string) - character to use to print the triangle
+    """

@@ -47,3 +47,19 @@ def format_bio(name, age):
     age_years = age / 12
     bio = f"Hi, my name is {name} and I am {age_years:.2f} years old."
     return bio
+
+# 4. 
+def print_triangle(base_length, char):
+    """
+    prints a triangle of base_length using char
+    Use: print_triangle(base_length, char)
+
+    Parameters:
+        base_length (int) - length of the base of the triangle
+        char (string) - character to use to print the triangle
+    """
+    for i in range(1, base_length + 1):
+        print(f"{char * i}")
+
+
+print_triangle(5, "*")
