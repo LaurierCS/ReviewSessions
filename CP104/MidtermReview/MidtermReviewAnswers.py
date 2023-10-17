@@ -61,5 +61,22 @@ def print_triangle(base_length, char):
     for i in range(1, base_length + 1):
         print(f"{char * i}")
 
+# 5.
+def print_advanced_triangle(base_length, char):
+    """
+    prints a triangle of base_length using char, prints every other row starting from base_length
+    and centers the triangle
+    Use: print_triangle(base_length, char)
 
-print_triangle(5, "*")
+    Parameters:
+        base_length (int) - length of the base of the triangle
+        char (string) - character to use to print the triangle
+    """ 
+    starting_length = 1
+    if base_length % 2 == 0:
+        starting_length = 2
+    
+    for i in range(starting_length, base_length + 1, 2):
+        print(f"{char * i:^{base_length}}")
+
+print_advanced_triangle(21, "*")

@@ -41,3 +41,15 @@ def print_triangle(base_length, char):
         base_length (int) - length of the base of the triangle
         char (string) - character to use to print the triangle
     """
+
+# 5. Implement the following function
+def print_advanced_triangle(base_length, char):
+    """
+    prints a triangle of base_length using char, prints every other row starting from base_length
+    and centers the triangle
+    Use: print_triangle(base_length, char)
+
+    Parameters:
+        base_length (int) - length of the base of the triangle
+        char (string) - character to use to print the triangle
+    """
