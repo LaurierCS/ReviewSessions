@@ -78,5 +78,3 @@ def print_advanced_triangle(base_length, char):
     
     for i in range(starting_length, base_length + 1, 2):
         print(f"{char * i:^{base_length}}")
-
-print_advanced_triangle(21, "*")
