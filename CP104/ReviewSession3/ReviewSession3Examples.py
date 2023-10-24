@@ -22,7 +22,7 @@ def print_factors(n):
         n (int) - number to find factors of
     """
 
-# 3. Implement the following function
+# 3. Implement the following function using a for loop
 def calculate_factorial(target):
     """
     calculates the factorial of a number (target!)
@@ -37,4 +37,16 @@ def calculate_factorial(target):
 
 
 
-# 4. 
+# 4. Implement the following function using a while loop
+def calculate_factorial(target):
+    """
+    calculates the factorial of a number (target!)
+    Use: factorial = calculate_factorial(target)
+
+    Parameters:
+        target (int) - number to calculate factorial of
+    
+    Returns:
+        factorial (int) - target!
+    """
+    

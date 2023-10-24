@@ -47,3 +47,19 @@ def calculate_factorial(target):
 
 
 # 4. 
+def calculate_factorial(target):
+    """
+    calculates the factorial of a number (target!)
+    Use: factorial = calculate_factorial(target)
+
+    Parameters:
+        target (int) - number to calculate factorial of
+    
+    Returns:
+        factorial (int) - target!
+    """
+    factorial = 1
+    while target > 1:
+        factorial *= target
+        target -= 1
+    return factorial
