@@ -30,3 +30,16 @@ def calculate_factorial(target):
     for i in range(1, target):
         factorial *= i
     return factorial
+
+# 3. 
+def print_factors(n):
+    """
+    prints the factors of n
+    Use: print_factors(n)
+
+    Parameters:
+        n (int) - number to find factors of
+    """
+    for value in range(1, n):
+        if n % value == 0:
+            print(value)
