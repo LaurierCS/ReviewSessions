@@ -13,8 +13,20 @@ def number_staircase(start, end, increment):
     """
     for i in range(start, end, -increment):
         print(i)
-
 # 2. 
+def print_factors(n):
+    """
+    prints the factors of n
+    Use: print_factors(n)
+
+    Parameters:
+        n (int) - number to find factors of
+    """
+    for value in range(1, n):
+        if n % value == 0:
+            print(value)
+
+# 3. 
 def calculate_factorial(target):
     """
     calculates the factorial of a number (target!)
@@ -31,15 +43,7 @@ def calculate_factorial(target):
         factorial *= i
     return factorial
 
-# 3. 
-def print_factors(n):
-    """
-    prints the factors of n
-    Use: print_factors(n)
 
-    Parameters:
-        n (int) - number to find factors of
-    """
-    for value in range(1, n):
-        if n % value == 0:
-            print(value)
+
+
+# 4. 

@@ -13,6 +13,16 @@ def number_staircase(start, end, increment):
     """
 
 # 2. Implement the following function
+def print_factors(n):
+    """
+    prints the factors of n
+    Use: print_factors(n)
+
+    Parameters:
+        n (int) - number to find factors of
+    """
+
+# 3. Implement the following function
 def calculate_factorial(target):
     """
     calculates the factorial of a number (target!)
@@ -25,12 +35,6 @@ def calculate_factorial(target):
         factorial (int) - target!
     """
 
-# 3. Implement the following function
-def print_factors(n):
-    """
-    prints the factors of n
-    Use: print_factors(n)
 
-    Parameters:
-        n (int) - number to find factors of
-    """
+
+# 4. 
