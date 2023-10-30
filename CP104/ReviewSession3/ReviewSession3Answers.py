@@ -27,39 +27,37 @@ def print_factors(n):
             print(value)
 
 # 3. 
-def calculate_factorial(target):
+def employee_payroll():
     """
-    calculates the factorial of a number (target!)
-    Use: factorial = calculate_factorial(target)
-
-    Parameters:
-        target (int) - number to calculate factorial of
-    
+    -------------------------------------------------------
+    Calculates and returns the weekly employee payroll for all employees
+    in an organization. For each employee, ask the user for the employee ID
+    number, the hourly wage rate, and the number of hours worked during a week.
+    An employee number of -1 indicates the end of user input.
+    Each employee is paid 1.5 times their regular hourly rate for all hours
+    over 40. 
+    Use: total, average = employee_payroll()
+    -------------------------------------------------------
     Returns:
-        factorial (int) - target!
+        total - total net employee wages (i.e. after taxes) (float)
+        average - average employee net wages (float)
+    ------------------------------------------------------
     """
-    factorial = 1
-    for i in range(1, target):
-        factorial *= i
-    return factorial
+    id = int(input("Employee ID: "))
+    total = 0
+    num_employees = 0
+    while id != -1:
+        rate = int(input("Hourly wage rate:"))
+        hours = int(input("Hours worked:"))
+        overtime = hours - 40
 
-
-
-
-# 4. 
-def calculate_factorial(target):
-    """
-    calculates the factorial of a number (target!)
-    Use: factorial = calculate_factorial(target)
-
-    Parameters:
-        target (int) - number to calculate factorial of
+        net_payment = rate * hours
+        if overtime > 0:
+            net_payment +=  overtime * rate * 1.5
+        
+        total +=  net_payment
+        num_employees += 1
+        print(f"Net payment for employee {id}: {net_payment}")
+        id = int(input("Employee ID: "))
     
-    Returns:
-        factorial (int) - target!
-    """
-    factorial = 1
-    while target > 1:
-        factorial *= target
-        target -= 1
-    return factorial
+    return total, total/num_employees

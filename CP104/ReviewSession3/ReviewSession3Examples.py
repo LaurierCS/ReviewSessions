@@ -22,31 +22,21 @@ def print_factors(n):
         n (int) - number to find factors of
     """
 
-# 3. Implement the following function using a for loop
-def calculate_factorial(target):
+# 3. Implement the following function
+def employee_payroll():
     """
-    calculates the factorial of a number (target!)
-    Use: factorial = calculate_factorial(target)
-
-    Parameters:
-        target (int) - number to calculate factorial of
-    
+    -------------------------------------------------------
+    Calculates and returns the weekly employee payroll for all employees
+    in an organization. For each employee, ask the user for the employee ID
+    number, the hourly wage rate, and the number of hours worked during a week.
+    An employee number of -1 indicates the end of user input.
+    Each employee is paid 1.5 times their regular hourly rate for all hours
+    over 40. 
+    Use: total, average = employee_payroll()
+    -------------------------------------------------------
     Returns:
-        factorial (int) - target!
+        total - total net employee wages (i.e. after taxes) (float)
+        average - average employee net wages (float)
+    ------------------------------------------------------
     """
 
-
-
-# 4. Implement the following function using a while loop
-def calculate_factorial(target):
-    """
-    calculates the factorial of a number (target!)
-    Use: factorial = calculate_factorial(target)
-
-    Parameters:
-        target (int) - number to calculate factorial of
-    
-    Returns:
-        factorial (int) - target!
-    """
-    
