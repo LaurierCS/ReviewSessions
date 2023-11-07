@@ -24,4 +24,27 @@ def union(source1, source2):
             target += char
     
     return target
+
+# 2.
+def find_range_median(numbers):
+    """
+    -------------------------------------------------------
+    Returns the range and median of a list of numbers.
+    Use: range_value, median_value = find_range_median(numbers)
+    -------------------------------------------------------
+    Parameters:
+        numbers - a list of numbers (list of float)
+    Returns:
+        range_value - the difference between the largest and smallest numbers (float)
+        median_value - the median number in the list (float)
+    -------------------------------------------------------
+    """
+    numbers.sort()
+    range_value = numbers[-1] - numbers[0] # max(numbers) - min(numbers)
     
+    if len(numbers) % 2 == 0:
+        median_value = (numbers[len(numbers) // 2] + numbers[len(numbers) // 2 - 1]) / 2
+    else:
+        median_value = numbers[len(numbers) // 2]
+    
+    return range_value, median_value
