@@ -48,3 +48,24 @@ def find_range_median(numbers):
         median_value = numbers[len(numbers) // 2]
     
     return range_value, median_value
+
+# 3. 
+def convert_to_title_case(sentence):
+    """
+    -------------------------------------------------------
+    Converts a string to title case, where the first letter of each
+    word is capitalized and all other letters are lowercase.
+    Use: title_case_sentence = convert_to_title_case(sentence)
+    -------------------------------------------------------
+    Parameters:
+        sentence - a string to be converted (str)
+    Returns:
+        title_case_sentence - the converted string in title case (str)
+    -------------------------------------------------------
+    """
+    title_case_sentence = ""
+    sentence_list = sentence.lower().split()
+    for word in sentence_list:
+        title_case_sentence += word[0].upper() + word[1:].lower() + " "
+    
+    return title_case_sentence.strip()
