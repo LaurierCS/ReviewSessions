@@ -29,3 +29,18 @@ def find_range_median(numbers):
         median_value - the median number in the list (float)
     -------------------------------------------------------
     """
+
+# 3. Implement the following function
+def convert_to_title_case(sentence):
+    """
+    -------------------------------------------------------
+    Converts a string to title case, where the first letter of each
+    word is capitalized and all other letters are lowercase.
+    Use: title_case_sentence = convert_to_title_case(sentence)
+    -------------------------------------------------------
+    Parameters:
+        sentence - a string to be converted (str)
+    Returns:
+        title_case_sentence - the converted string in title case (str)
+    -------------------------------------------------------
+    """
