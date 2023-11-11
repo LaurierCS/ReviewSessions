@@ -40,7 +40,7 @@ def find_range_median(numbers):
     -------------------------------------------------------
     """
     numbers.sort()
-    range_value = numbers[-1] - numbers[0] # max(numbers) - min(numbers)
+    range_value = max(numbers) - min(numbers)
     
     if len(numbers) % 2 == 0:
         median_value = (numbers[len(numbers) // 2] + numbers[len(numbers) // 2 - 1]) / 2
@@ -66,6 +66,6 @@ def convert_to_title_case(sentence):
     title_case_sentence = ""
     sentence_list = sentence.lower().split()
     for word in sentence_list:
-        title_case_sentence += word[0].upper() + word[1:].lower() + " "
+        title_case_sentence += word[0].upper() + word[1:] + " "
     
     return title_case_sentence.strip()

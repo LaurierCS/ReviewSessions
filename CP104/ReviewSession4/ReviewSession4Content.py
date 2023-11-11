@@ -38,6 +38,13 @@ print(s[0])
 # string slicing
 print(s[0:5])
 
+# string methods
+s.upper()
+s.lower()
+s.strip()
+s.find("l")
+s.replace("l", "x")
+
 
 # string traversal
 for i in s:
