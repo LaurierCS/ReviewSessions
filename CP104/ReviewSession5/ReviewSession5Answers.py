@@ -11,7 +11,7 @@ def customer_by_name(fh, name):
         name - the name to match (str)
     Returns:
         result - the record with the given name if it exists,
-            an empty list otherwise (list)
+            an empty str otherwise (str)
     -------------------------------------------------------
     """
     result = ""
@@ -49,3 +49,21 @@ def filter_by_year(fh, year):
             results.append(fields)
         line = fh.readline()
     return results
+
+# 3.
+def diagonal_sum(matrix):
+    """
+    -------------------------------------------------------
+    Calculates the sum of the diagonal elements of a square matrix.
+    Use: sum = diagonal_sum(matrix)
+    -------------------------------------------------------
+    Parameters:
+        matrix - a 2D square list (2D list of float/int)
+    Returns:
+        sum - the sum of the diagonal elements (float/int)
+    -------------------------------------------------------
+    """
+    sum = 0
+    for i in range(len(matrix)):
+        sum += matrix[i][i]
+    return sum
