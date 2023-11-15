@@ -24,5 +24,28 @@ def customer_by_name(fh, name):
         line = fh.readline()
     return result
 
-fh = open("CP104/ReviewSession5/ExampleFiles/customers.txt", "r")
-print(customer_by_name(fh, "Jane White"))
+# 2.
+def filter_by_year(fh, year):
+    """
+    -------------------------------------------------------
+    Find all customer records that signed up in a given year.
+    Use: results = filter_by_year(fh, year)
+    -------------------------------------------------------
+    Parameters:
+        fh - file to search (file handle - already open for reading)
+        year - the year to filter records by (int)
+    Returns:
+        results - list of records that match the year (list of lists)
+    -------------------------------------------------------
+    """
+    results = []
+    line = fh.readline()
+    while line != "":
+        line = line.strip()
+        fields = line.split(",")
+        date = fields[4]
+        curr_year = date.split("-")[0]
+        if int(curr_year) == year:
+            results.append(fields)
+        line = fh.readline()
+    return results
