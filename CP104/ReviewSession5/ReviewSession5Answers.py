@@ -15,39 +15,38 @@ def customer_by_name(fh, name):
     -------------------------------------------------------
     """
     result = ""
-    line = fh.readline()
+    line = fh.readline().strip()
     while line != "":
         line = line.strip()
         fields = line.split(",")
         if fields[1] + " " + fields[2] == name:
-            result = ','.join(fields)
-        line = fh.readline()
+            result = line
+        line = fh.readline().strip()
     return result
 
 # 2.
 def filter_by_year(fh, year):
     """
     -------------------------------------------------------
-    Find all customer records that signed up in a given year.
+    Find all customer transactions in a given year
     Use: results = filter_by_year(fh, year)
     -------------------------------------------------------
     Parameters:
         fh - file to search (file handle - already open for reading)
         year - the year to filter records by (int)
     Returns:
-        results - list of records that match the year (list of lists)
+        results - list of records that match the year (list of str)
     -------------------------------------------------------
     """
     results = []
-    line = fh.readline()
+    line = fh.readline().strip()
     while line != "":
-        line = line.strip()
         fields = line.split(",")
         date = fields[4]
         curr_year = date.split("-")[0]
         if int(curr_year) == year:
-            results.append(fields)
-        line = fh.readline()
+            results.append(line)
+        line = fh.readline().strip()
     return results
 
 # 3.

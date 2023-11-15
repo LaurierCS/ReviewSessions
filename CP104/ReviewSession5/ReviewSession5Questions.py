@@ -19,7 +19,7 @@ def customer_by_name(fh, name):
 def filter_by_year(fh, year):
     """
     -------------------------------------------------------
-    Find all customer records that signed up in a given year.
+    Find all customer transactions in a given year
     Use: results = filter_by_year(fh, year)
     -------------------------------------------------------
     Parameters:
