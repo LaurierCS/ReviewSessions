@@ -43,3 +43,19 @@ def diagonal_sum(matrix):
         sum - the sum of the diagonal elements (float/int)
     -------------------------------------------------------
     """
+
+# 4. Implement the following function.
+def replace_elements(matrix, old, new):
+    """
+    -------------------------------------------------------
+    Replaces all occurrences of 'old' value with 'new' value in a 2D list.
+    Use: replace_elements(matrix, old, new)
+    -------------------------------------------------------
+    Parameters:
+        matrix - a 2D list (2D list)
+        old - the value to be replaced (int/float/str)
+        new - the new value (int/float/str)
+    Returns:
+        None.
+    -------------------------------------------------------
+    """
