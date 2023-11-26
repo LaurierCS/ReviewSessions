@@ -1,0 +1,5 @@
+INFO: User logged in successfully.
+WARNING: Low disk space.
+ERROR: File not found.
+INFO: Data processed.
+WARNING: System running low on memory.

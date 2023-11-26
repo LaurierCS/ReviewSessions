@@ -1,0 +1,5 @@
+Purchase: Bookstore - $30.00
+Withdrawal: ATM - $100.00
+Deposit: Salary - $2000.00
+Purchase: Grocery Store - $45.50
+Transfer: Savings Account - $500.00
